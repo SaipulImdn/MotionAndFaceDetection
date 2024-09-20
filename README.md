@@ -1,28 +1,28 @@
 ````markdown
 # Face and Motion Detection with Age Estimation
 
-Proyek ini adalah aplikasi untuk mendeteksi wajah, gerakan, dan memperkirakan usia pengguna menggunakan OpenCV dan model pre-trained untuk estimasi usia.
+This project is an application for detecting faces, motion, and estimating the age of users using OpenCV and a pre-trained model for age estimation.
 
-## Fitur
+## Features
 
-- **Deteksi Wajah**: Menggunakan Haar Cascade untuk mendeteksi wajah dalam video.
-- **Deteksi Gerakan**: Menggunakan background subtraction untuk mendeteksi gerakan dalam frame.
-- **Estimasi Usia**: Memperkirakan usia pengguna berdasarkan wajah yang terdeteksi.
+- **Face Detection**: Uses Haar Cascade to detect faces in video.
+- **Motion Detection**: Employs background subtraction to detect motion in frames.
+- **Age Estimation**: Estimates the age of users based on detected faces.
 
 ## Prerequisites
 
-Pastikan Anda memiliki Python 3 dan paket berikut terinstal:
+Make sure you have Python 3 and the following packages installed:
 
 - OpenCV
 
-Anda dapat menginstalnya dengan pip:
+You can install it using pip:
 
 ```bash
 pip install opencv-python
 ```
 ````
 
-## Struktur Folder
+## Folder Structure
 
 ```
 FaceAndMotionDetection/
@@ -35,52 +35,52 @@ FaceAndMotionDetection/
     └── __init__.py
 ```
 
-## Model Usia
+## Age Model
 
-Unduh model yang diperlukan untuk estimasi usia:
+Download the required models for age estimation:
 
-1. **Model Arsitektur**: [deploy_age.prototxt](https://github.com/spmallick/learnopencv/blob/master/AgeGender/deploy_age.prototxt)
-2. **Model Bobot**: [age_net.caffemodel](https://github.com/spmallick/learnopencv/blob/master/AgeGender/age_net.caffemodel)
+1. **Model Architecture**: [deploy_age.prototxt](https://github.com/spmallick/learnopencv/blob/master/AgeGender/deploy_age.prototxt)
+2. **Model Weights**: [age_net.caffemodel](https://github.com/spmallick/learnopencv/blob/master/AgeGender/age_net.caffemodel)
 
-Simpan kedua file ini di direktori yang sama dengan `main.py`.
+Place both files in the same directory as `main.py`.
 
-## Cara Menjalankan Aplikasi
+## How to Run the Application
 
-1. **Clone Repository**:
+1. **Clone the Repository**:
 
    ```bash
    git clone <repository-url>
    cd FaceAndMotionDetection
    ```
 
-2. **Jalankan Aplikasi**:
+2. **Run the Application**:
 
    ```bash
    python3 main.py
    ```
 
-3. **Menghentikan Aplikasi**:
-   Tekan `q` pada keyboard untuk keluar dari aplikasi.
+3. **Stop the Application**:
+   Press `q` on your keyboard to exit the application.
 
-## Catatan
+## Notes
 
-- Pastikan webcam Anda berfungsi dengan baik, karena aplikasi ini menggunakan webcam untuk menangkap video secara langsung.
-- Model usia hanya berfungsi jika wajah terdeteksi dengan jelas.
+- Ensure your webcam is functioning correctly, as this application uses the webcam to capture live video.
+- The age model works only if the face is detected clearly.
 
-## Kontribusi
+## Contribution
 
-Jika Anda ingin berkontribusi pada proyek ini, silakan buat pull request atau buka isu untuk mendiskusikan fitur yang ingin ditambahkan.
+If you would like to contribute to this project, please create a pull request or open an issue to discuss features you would like to add.
 
-## Lisensi
+## License
 
-Proyek ini dilisensikan di bawah lisensi MIT. Lihat [LICENSE](LICENSE) untuk detail lebih lanjut.
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for more details.
 
 ```
 
-### Cara Menggunakan
+### Usage
 
-1. Salin konten di atas dan simpan dalam file bernama `README.md` di direktori proyek Anda.
-2. Pastikan untuk memperbarui `<repository-url>` dengan URL repositori Anda jika Anda menggunakan sistem kontrol versi seperti Git.
+1. Copy the content above and save it as `README.md` in your project directory.
+2. Update `<repository-url>` with your repository URL if you're using version control like Git.
 
-Ini akan memberi pengunjung informasi yang jelas tentang proyek Anda dan cara menggunakannya. Jika Anda ingin menambahkan informasi lain atau melakukan penyesuaian, silakan beri tahu!
+This will provide visitors with clear information about your project and how to use it. If you need further adjustments or additional sections, just let me know!
 ```
